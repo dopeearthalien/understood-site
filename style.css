@@ -126,10 +126,13 @@ ul.plain{margin:0;padding-left:18px;color:var(--text2)}
 ul.plain li{margin:6px 0}
 
 /* cta + footer */
-.cta{margin-top:96px;border:1px solid var(--line);border-radius:18px;padding:44px 40px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;
+.cta{margin-top:96px;border:1px solid var(--line);border-radius:18px;padding:44px 40px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;overflow:hidden;
   background:radial-gradient(60% 120% at 0% 0%,rgba(91,124,255,.18),transparent 60%),radial-gradient(50% 120% at 100% 100%,rgba(139,92,246,.14),transparent 60%),var(--bg2)}
 .cta h2{margin:0;font:600 clamp(26px,3vw,38px)/1.1 var(--display);letter-spacing:-.035em;max-width:22ch;text-wrap:balance}
 .cta p{margin:8px 0 0;color:var(--text2)}
+.cta .actions{display:flex;gap:12px;flex-wrap:wrap;max-width:100%}
+.cta .actions .btn{max-width:100%}
+.cta .addr{margin:10px 0 0;font:500 13px/1.5 var(--mono);color:var(--text3);overflow-wrap:anywhere}
 footer{margin-top:40px;padding:26px 0 40px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px;color:var(--text3)}
 footer a{color:var(--text3);text-decoration:none}
 footer a:hover{color:var(--text)}
@@ -148,5 +151,8 @@ footer a:hover{color:var(--text)}
   .burger{display:block}
   .panel{min-height:0;padding:24px 14px}
   .turn{grid-template-columns:1fr}
+  .cta{padding:32px 24px;display:block}
+  .cta .actions{margin-top:22px}
+  .cta .actions .btn{width:100%;justify-content:center}
 }
 @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}.orb{animation:none}}
