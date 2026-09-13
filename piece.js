@@ -2,8 +2,8 @@
    slowly, generated on the GPU, different every visit, never busy. Falls back
    to a still CSS-like gradient without WebGL. Also wires the small-screen menu. */
 (function () {
-  // Booking link: paste the Calendly address between the quotes and the "Book 20 minutes" buttons appear.
-  const BOOKING_URL = "";
+  // Booking link (Cal.com, 20 minutes). Empty string hides the "Book 20 minutes" buttons.
+  const BOOKING_URL = "https://cal.com/stewartb/private-ai-consultation";
   document.querySelectorAll("#book").forEach((a) => { if (BOOKING_URL) { a.href = BOOKING_URL; a.hidden = false; a.target = "_blank"; a.rel = "noopener"; } });
   const b = document.getElementById("burger"), n = document.getElementById("links");
   if (b && n) b.addEventListener("click", () => { const o = n.classList.toggle("open"); b.setAttribute("aria-expanded", o ? "true" : "false"); });
