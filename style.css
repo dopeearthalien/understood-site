@@ -9,12 +9,12 @@
   --mono:"JetBrains Mono","SF Mono","Menlo",monospace;
 }
 *{box-sizing:border-box}
-html{color-scheme:dark;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 var(--body);
+html{color-scheme:dark;-webkit-font-smoothing:antialiased;scroll-behavior:smooth;overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 var(--body);overflow-x:clip;max-width:100vw;
   background-image:radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px);background-size:28px 28px}
 a{color:inherit}
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px;overflow-x:clip}
 .mono{font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--text3)}
 
 /* nav */
@@ -34,7 +34,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .burger span:nth-child(1){top:9px}.burger span:nth-child(2){top:14px}.burger span:nth-child(3){top:19px}
 
 /* hero */
-.hero{position:relative;padding:96px 0 56px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:48px;align-items:end;isolation:isolate}
+.hero{position:relative;padding:96px 0 56px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:48px;align-items:end;isolation:isolate;overflow:clip}
 .hero > *{position:relative;z-index:1}
 /* the splash: a big saturated orb behind the top right, fading out before the text */
 .orb{position:absolute;z-index:0;right:-8%;top:-140px;width:640px;height:640px;border-radius:50%;pointer-events:none;
@@ -139,7 +139,8 @@ footer a:hover{color:var(--text)}
 
 @media (max-width:900px){
   .hero{grid-template-columns:1fr;padding-top:64px;gap:28px}
-  .orb{width:420px;height:420px;right:-30%;top:-160px;opacity:.7}
+  .orb{width:420px;height:420px;right:-120px;top:-160px;opacity:.7}
+  .wrap{padding:0 20px}
   .stats,.cards,.grid2,.row3,.two,.section .head{grid-template-columns:1fr}
   .stats > div{border-right:0;border-bottom:1px solid var(--line)}
   .stats > div:last-child{border-bottom:0}
