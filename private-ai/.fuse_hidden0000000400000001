@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Private AI for your business: an AI assistant that only knows your own documents | Understood Solutions</title>
-<meta name="description" content="A private AI assistant for small businesses and associations in the UK. It answers only from your own material, plugs into Google Drive and Google Workspace, names every source, is hosted in the EU and is never used to train anyone's model. Set up and run by Understood Solutions.">
+<meta name="description" content="A private AI assistant for small businesses and associations in the UK. It answers only from your own material, names every source, is hosted in the EU and is never used to train anyone's model. Set up and run by Understood Solutions.">
 <link rel="canonical" href="https://understood.co.uk/private-ai/">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="website">
@@ -12,14 +12,14 @@
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://understood.co.uk/private-ai/">
 <meta property="og:title" content="Private AI for your business: an AI assistant that only knows your own documents | Understood Solutions">
-<meta property="og:description" content="A private AI assistant for small businesses and associations in the UK. It answers only from your own material, plugs into Google Drive and Google Workspace, names every source, is hosted in the EU and is never used to train anyone's model. Set up and run by Understood Solutions.">
+<meta property="og:description" content="A private AI assistant for small businesses and associations in the UK. It answers only from your own material, names every source, is hosted in the EU and is never used to train anyone's model. Set up and run by Understood Solutions.">
 <meta property="og:image" content="https://understood.co.uk/img/og-private-ai.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Private AI for your business: an AI assistant that only knows your own documents | Understood Solutions">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Private AI for your business: an AI assistant that only knows your own documents | Understood Solutions">
-<meta name="twitter:description" content="A private AI assistant for small businesses and associations in the UK. It answers only from your own material, plugs into Google Drive and Google Workspace, names every source, is hosted in the EU and is never used to train anyone's model. Set up and run by Understood Solutions.">
+<meta name="twitter:description" content="A private AI assistant for small businesses and associations in the UK. It answers only from your own material, names every source, is hosted in the EU and is never used to train anyone's model. Set up and run by Understood Solutions.">
 <meta name="twitter:image" content="https://understood.co.uk/img/og-private-ai.png">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/img/favicon-32.png" type="image/png" sizes="32x32">
@@ -135,13 +135,34 @@
   </div>
 
   <section class="drive" aria-labelledby="drive-h">
-    <div class="drive-art">
-      <img class="drive-logo" src="../img/google-drive.svg" alt="Google Drive" width="120" height="107">
-      <div class="drive-flow"><span></span><span></span><span></span></div>
-      <div class="drive-ai"><span class="drive-lock"></span></div>
+    <div class="drive-art" aria-hidden="true">
+      <svg viewBox="0 0 220 160" width="220" height="160" role="img">
+        <defs>
+          <linearGradient id="dg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff3d81"/><stop offset=".45" stop-color="#ff8a3d"/><stop offset=".75" stop-color="#5b7cff"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+          <linearGradient id="dg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(255,255,255,.18)"/><stop offset="1" stop-color="rgba(255,255,255,.02)"/></linearGradient>
+        </defs>
+        <!-- three shared drives, stacked -->
+        <g class="stack">
+          <rect x="18" y="86" width="96" height="40" rx="10" fill="url(#dg2)" stroke="rgba(255,255,255,.18)"/>
+          <rect x="18" y="52" width="96" height="40" rx="10" fill="url(#dg2)" stroke="rgba(255,255,255,.22)"/>
+          <rect x="18" y="18" width="96" height="40" rx="10" fill="url(#dg2)" stroke="rgba(255,255,255,.28)"/>
+          <circle cx="36" cy="38" r="4" fill="#3ddc97"/><circle cx="36" cy="72" r="4" fill="#3ddc97"/><circle cx="36" cy="106" r="4" fill="#3ddc97"/>
+          <rect x="48" y="35" width="48" height="6" rx="3" fill="rgba(255,255,255,.35)"/>
+          <rect x="48" y="69" width="40" height="6" rx="3" fill="rgba(255,255,255,.3)"/>
+          <rect x="48" y="103" width="54" height="6" rx="3" fill="rgba(255,255,255,.25)"/>
+        </g>
+        <!-- the flow -->
+        <path class="flow" d="M114 72 C 140 72, 140 72, 160 72" fill="none" stroke="url(#dg)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 8"/>
+        <!-- the assistant -->
+        <rect x="160" y="52" width="44" height="44" rx="12" fill="url(#dg)"/>
+        <circle cx="176" cy="74" r="3.5" fill="#fff"/><circle cx="188" cy="74" r="3.5" fill="#fff"/>
+        <!-- the lock: only the drives you may open -->
+        <rect x="134" y="98" width="22" height="18" rx="5" fill="#0f1420" stroke="rgba(255,255,255,.3)"/>
+        <path d="M138 98 v-5 a7 7 0 0 1 14 0 v5" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="2"/>
+      </svg>
     </div>
     <div class="drive-copy">
-      <p class="mono drive-kicker"><img src="../img/google-drive.svg" alt="Google Drive" width="22" height="20">Now with Google Drive</p>
+      <p class="mono">Now with Google Drive</p>
       <h2 id="drive-h">Plug it into your Google Workspace. Ask your Drive anything.</h2>
       <p>Point it at your shared drives and it reads them: Docs, Sheets, Slides, PDFs, Word files. Your people <b>sign in with Google</b>, pick a drive, and ask. Every answer comes from that drive's files and names the file it came from.</p>
       <p>The clever bit is who sees what. It reads your Drive sharing and your Google Groups, so <b>a person only ever gets answers from files they could already open</b>. Finance stays in finance. Change a permission in Google and it follows within the hour. Change a file and so does the answer.</p>
